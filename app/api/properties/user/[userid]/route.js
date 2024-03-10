@@ -10,7 +10,7 @@ export const GET = async (request, { params }) => {
 
     if (!userId) {
       return new Response('User ID is required', { status: 400 });
-    }
+    } 
 
     const properties = await Property.find({ owner: userId });
 
