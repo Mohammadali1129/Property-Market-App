@@ -1,6 +1,6 @@
 import InfoBox from './InfoBox';
 
-const InfoTypeBoxes = () => {
+const InfoBoxes = () => {
   return (
     <section>
       <div className='container-xl lg:container m-auto'>
@@ -34,4 +34,4 @@ const InfoTypeBoxes = () => {
     </section>
   );
 };
-export default InfoTypeBoxes;
+export default InfoBoxes;

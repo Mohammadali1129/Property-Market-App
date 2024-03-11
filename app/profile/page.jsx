@@ -1,14 +1,13 @@
-'use client';
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useSession } from 'next-auth/react';
-import profileDefault from '@/assets/images/profile.png';
-import Spinner from '@/components/Spinner';
-import { toast } from 'react-toastify';
-
+"use client";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { useSession} from "next-auth/react";
+import profileDefault from "@/assets/images/profile.png";
+import Spinner from "@/components/Spinner";
+ 
 const ProfilePage = () => {
-  const { data: session } = useSession();
+  const { data: session} = useSession();
   const profileImage = session?.user?.image;
   const profileName = session?.user?.name;
   const profileEmail = session?.user?.email;
